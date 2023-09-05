@@ -1,0 +1,118 @@
+<html>
+    <video src="/models/video.mp4" autoplay loop muted poster=""></video>
+    <div id="loginModal" class="accion-ser" role="dialog">
+        <div class="boxes-ser">
+            <a id="empresa">
+                <button class="b-candidatos">
+                    <div class="b-descript" href="#">Quiero SER un reclutador</div>
+                </button>
+            </a>
+        </div>
+        <div class="boxes-ser">
+            <a id="candidato">
+                <button class="b-empleo">
+                    <div class="b-descript" href="#">Quiero SER un candidato</div>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="logo">
+        <img class="logopng" src="/models/SER.png">
+    </div>
+    <style>
+        * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+video{
+    position:fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+.accion-ser {
+    height: 500px;
+    width: 500px;
+    display: flex;
+}
+
+.boxes-ser {
+    margin: 15px;
+}
+
+a > .b-candidatos {
+    background-color: #1453a0;
+    border: 1px solid #58448b;
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    border-top-left-radius: 30rem;
+    border-bottom-left-radius: 30rem;    
+    box-shadow: 0 0px 5px #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+a > .b-empleo {
+    background-color: #1453a0;
+    border: 1px solid #58448b;
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    border-top-right-radius: 30rem;
+    border-bottom-right-radius: 30rem;
+    box-shadow: 0 0px 5px #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boxes-ser > a .b-candidatos:focus{
+    transform: translateY(-200%);
+    transition: all 1s ease-out;
+}
+
+.boxes-ser > a .b-empleo:focus{
+    transform: translateY(200%);
+    transition: all 1s ease-out;
+}
+
+
+.b-candidatos > .b-descript{
+    text-align: right;
+    padding: 1rem;
+}
+
+.b-empleo > .b-descript{
+    text-align: left;
+    padding: 1rem;
+}
+
+.b-descript {
+    display: inline-block;
+    font-family: "Montserrat";
+    color: azure;
+    font-size: 1.2em;
+}
+
+.logo{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+.logopng{
+    width: 150px;
+}
+    </style>
+</body>
+</html>

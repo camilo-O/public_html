@@ -1,0 +1,229 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="site">
+            <div class="sketch">
+                <div class="ser_sketch red"></div>
+                <div class="ser_sketch blue"></div>
+            </div>
+        
+        <h1>404:
+            <small>Oops! No encontramos la página</small><a href="https://serenaccion.com.co"><button>Volver a inicio</button></a></h1>
+        </div>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+body {
+	display: flex;
+}
+
+h1 {
+	font-family: 'Montserrat';
+	font-size: 3em;
+	text-align: center;
+    padding-top: 100px;
+	opacity: .8;
+	order: 1;
+}
+
+h1 small {
+	display: block;
+}
+
+.site {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+  align-items: center;
+	flex-direction: column;
+	margin: 0 auto;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+
+.sketch {
+	position: relative;
+	height: 400px;
+	min-width: 400px;
+	margin: 0;
+	overflow: visible;
+	order: 2;
+	
+}
+
+.ser_sketch {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.red {
+	background: url(/SER.png) no-repeat center center;
+	opacity: 1;
+	animation: red 3s linear infinite, opacityRed 5s linear alternate infinite;
+}
+
+.blue {
+	background: url(/SER.png) no-repeat center center;
+	opacity: 0;
+	animation: blue 3s linear infinite, opacityBlue 5s linear alternate infinite;
+}
+
+button {
+    background: #1453a0;
+    cursor: pointer;
+    padding: 10px 16px;
+    width: auto;
+    font-weight: 600;
+    text-transform:  uppercase;
+    font-size: 14px;
+    color: #fff;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
+    border: 0;
+    outline: 0;
+    margin: 15px 15px 15px 0;
+    transition: all 0.25s;
+} 
+button:hover {
+    background: #1453a0;
+    box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+}
+
+
+@media only screen and (min-width: 780px) {
+  .site {
+		flex-direction: row;
+		padding: 1em 3em 1em 0em;
+	}
+	
+	h1 {
+		text-align: left;
+		order: 2;
+		padding-bottom: 2em;
+		padding-left: 2em;
+
+	}
+	
+	.sketch {
+		order: 1;
+	}
+}
+
+
+@keyframes blue {
+	0% {
+		background-image: url(/error/1.svg) 
+  }
+	9.09% {
+		background-image: url(/error/2.svg) 
+  }
+	27.27% {
+		background-image: url(/error/3.svg) 
+  }
+	36.36% {
+		background-image: url(/error/4.svg) 
+  }
+	45.45% {
+		background-image: url(/error/5.svg) 
+  }
+	54.54% {
+		background-image: url(/error/6.svg) 
+  }
+	63.63% {
+		background-image: url(/error/16.svg) 
+  }
+	72.72% {
+		background-image: url(/error/8.svg) 
+  }
+	81.81% {
+		background-image: url(/error/9.svg) 
+  }
+	100% {
+		background-image: url(/error/10.svg) 
+  }
+}
+
+@keyframes red {
+	0% {
+		background-image: url(/error/11.svg) 
+  }
+	9.09% {
+		background-image: url(/error/12.svg) 
+  }
+	27.27% {
+		background-image: url(/error/13.svg) 
+  }
+	36.36% {
+		background-image: url(/error/14.svg) 
+  }
+	45.45% {
+		background-image: url(/error/15.svg) 
+  }
+	54.54% {
+		background-image: url(/error/16.svg) 
+  }
+	63.63% {
+		background-image: url(/error/17.svg) 
+  }
+	72.72% {
+		background-image: url(/error/8.svg) 
+  }
+	81.81% {
+		background-image: url(/error/2.svg) 
+  }
+	100% {
+		background-image: url(/error/12.svg) 
+  }
+}
+
+@keyframes opacityBlue {
+	from {
+		opacity: 0
+	}
+	25% {
+		opacity: 0
+	}
+	75% {
+		opacity: 1
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes opacityRed {
+	from {
+		opacity: 1
+	}
+	25% {
+		opacity: 1
+	}
+	75% {
+		opacity: .3
+	}
+	to {
+		opacity: .3
+	}
+}
+        </style>
+    </body>

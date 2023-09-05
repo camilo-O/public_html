@@ -1,0 +1,65 @@
+* {
+    font-family: Montserrat;
+    align-content: center;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    height: 116px;
+    padding-top: 5px;
+    padding-bottom: 45px;
+  }
+  .logo_ser {
+    padding-top: 20px !important;
+    position: relative;
+  }
+  
+  .logo_ser a {
+    float: left;
+    padding: 11px 20px;
+  }
+  .titulo_pag {
+    padding-top: 2vh !important;
+    z-index: 100;
+    font-family:'Montserrat', sans-serif;
+    text-align: end;
+    font-weight: 600;
+    font-size:4.7vh;
+    color:#1453a0;
+    line-height: 2.7vh;
+  }
+  
+  .content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color: #1453a0;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 3px solid #1453a0;
+  }  
